@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Destino</title>
+    <!-- Link para o Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" th:href="@{/clientes}">Clientes</a>
+    <a class="navbar-brand" th:href="@{/destinos}">Destinos</a>
+</nav>
+
+<div class="container mt-3">
+    <h2>Cadastro de Destino</h2>
+    <form th:action="@{/destinos/adicionar}" th:object="${destino}" method="post">
+
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" class="form-control" th:field="*{nome}" />
+        </div>
+
+        <div class="form-group">
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" class="form-control" th:field="*{descricao}"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" class="form-control" th:field="*{cidade}" />
+        </div>
+
+        <div class="form-group">
+            <label for="pais">País:</label>
+            <input type="text" id="pais" class="form-control" th:field="*{pais}" />
+        </div>
+
+        <div class="form-group">
+            <label>Clientes:</label>
+            <div th:each="cliente : ${clientes}" class="form-check">
+                <input class="form-check-input" type="checkbox" id="cliente-${cliente.id}"
+                       name="clientes" th:value="${cliente.id}"
+                       th:checked="${destino.clientes.contains(cliente)}" />
+                <label class="form-check-label" th:for="'cliente-' + ${cliente.id}"
+                       th:text="${cliente.nome}"></label>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Salvar</button>
+    </form>
+</div>
+
+</body>
+
+</html>

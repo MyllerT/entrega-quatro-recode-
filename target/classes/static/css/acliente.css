@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgba(182, 175, 175, 0.534);
+}
+
+main {
+    margin-top: 150px;
+}
+
+/* 1ª Section: */
+#meusDados .row{
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+
+#meusDados .col{
+    margin: 30px auto 30px auto;
+    border-right: 2px solid #413f3fbd;
+    padding-right: 15px;
+}
+
+#meusDados .col:last-child {
+    border-right: none;
+  }
+
+#meusDados #perfil h1 {
+    font-size: 20pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #666666;
+}
+
+#meusDados h5 {
+    font-size: 13pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #666666;
+}
+
+#meusDados form label {
+    font-size: 11.5pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #666666;
+}
+
+#meusDados form input {
+    font-style: italic;
+    font-size: 12pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #666666;
+}
+
+#meusDados form button {
+    margin: 10px auto;
+}
+/*Fim - 1ª Section. */
+/* ============================================================================================================================== */
+
+/* 2ª Section: */
+#planoChamado {
+    margin-top: 50px;
+}
+
+#planoChamado #planoBl1 {
+    margin-top: 25px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+
+#planoChamado #planoBl1 .col {
+    border-right: 2px solid #413f3fbd;
+    padding-right: 15px;
+}
+
+#planoChamado #planoBl1 .col:last-child {
+    border-right: none;
+}
+
+
+#planoChamado #planoBl1 h1 {
+    font-size: 20pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #666666;
+}
+#planoChamado #planoBl1 h6 {
+    margin-top: 10px;
+    font-size: 15pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #666666;
+}
+
+#planoChamado #planoBl1 img {
+   margin-top: 20px;
+   width: 150px;
+   border-radius: 10px;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#planoChamado #planoBl1 a {
+   margin-top: 20px;
+   width: 150px;
+   border-radius: 5px;
+   box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+   font-weight: bold;
+}
+
+#planoChamado #planoBl1 p {
+    margin-top: 10px;
+    /* width: 250px; */
+    font-size: 11pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #666666;
+ }
+
+ #planoChamado #planoBl2 {
+    max-width: 600px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+
+#planoChamado #planoBl2 h1 {
+    margin-top: 30px;
+    font-size: 20pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #666666;
+}
+
+#planoBl2 form {
+    display: flex;
+    flex-direction: column;
+}
+
+#planoBl2 input{
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+
+#planoBl2 textarea{
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+
+#planoBl2 button {
+    width: 150px;
+    background-color: #007BFF; 
+    color: #fff; 
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+
+#planoBl2 button:hover {
+    background-color: #0056b3; /* Cor de fundo azul mais escura ao passar o mouse */
+}
+
+/*Fim - 2ª Section. */
+/* ============================================================================================================================== */
+
+/* 2ª Section: */
+#meusIndicadores {
+    margin-top: 50px;
+}
+
+#meusIndicadores .row {
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+
+#meusIndicadores .col {
+    margin-top: 20px;
+}
+
+#meusIndicadores #titulo, #clima, #produtividade {
+    border-right: 2px solid #413f3fbd;
+    padding-right: 15px;
+}
+
+#meusIndicadores h1 {
+    font-size: 20pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #666666;
+}
+
+#meusIndicadores h5 {
+    margin-top: 25px;
+    font-size: 14pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #666666;
+}
+
+#meusIndicadores h6 {
+    font-size: 11pt;
+    font-weight: bold;
+    color: #666666;
+}
+
+#meusIndicadores p {
+    font-size: 10pt;
+    color: #666666;
+}
+
+#meusIndicadores img#grafico {
+    margin-top: 20px;
+    width: 200px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+}
+
+#meusIndicadores img#indicador {
+    margin-top: 30px;
+    width: 150px;
+}
+/*Fim - 2ª Section. */
+/* ============================================================================================================================== */
+
+footer {
+    margin-top: 50px;
+}

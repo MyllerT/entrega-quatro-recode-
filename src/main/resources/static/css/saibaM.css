@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+main {
+    margin-top: 120px;
+}
+
+/* News: */
+#news {
+    background-image: url('../img/foto_hoje.png');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff; /* Define a cor do texto */
+    padding: 50px 0; /* Ajusta o espaçamento interno conforme necessário */
+}
+
+.news-content {
+    background-color: rgba(0, 0, 0, 0.7); /* Define a cor de fundo com opacidade */
+    padding: 20px;
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+}
+
+.news-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-disguised {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #ffffff; /* Define a cor do texto do botão */
+    border: 2px solid #ffffff; /* Adiciona uma borda ao botão */
+    border-radius: 5px;
+    text-decoration: none; /* Remove o sublinhado padrão de links */
+    transition: background-color 0.3s, color 0.3s; /* Adiciona uma transição suave */
+}
+
+.btn-disguised:hover {
+    background-color: #ffffff; /* Altera a cor de fundo ao passar o mouse */
+    color: #000000; /* Altera a cor do texto ao passar o mouse */
+}
+/*Fim - News. */
+/* ============================================================================================================================== */
+
+/* Botões: Artigos, Cursos e Downloads: */
+#btnTroca {
+    display: flex;
+    justify-content: space-around; /* Alinha os itens lado a lado com espaçamento igual entre eles */
+}
+
+#btnArtigo {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 120px;
+    border: solid 1px #636060;
+    color: #636060;
+    background-color: transparent;
+    transition: background-color 0.2s, color 0.2s;
+    /* Transição de cores no hover */
+}
+
+#btnCurso {
+    margin-top: 50px;
+    margin-bottom: 30px;;
+    position: relative;
+    width: 120px;
+    border: solid 1px #636060;
+    color: #636060;
+    background-color: transparent;
+    transition: background-color 0.2s, color 0.2s;
+    /* Transição de cores no hover */
+}
+
+#btnDownload {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    position: relative;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    width: 120px;
+    border: solid 1px #636060;
+    color: #636060;
+    background-color: transparent;
+    transition: background-color 0.2s, color 0.2s;
+    /* Transição de cores no hover */
+}
+
+#btnArtigo.active, #btnCurso.active, #btnDownload.active {
+    border-color: #0815c9;
+    background-color: rgba(15, 15, 230, 0.733);/* Cor de fundo ativa */
+    font-weight: bold;
+    color: #0206fc; /* Cor do texto ativo */
+}
+
+#btnArtigo:hover, #btnCurso:hover, #btnDownload:hover {
+    font-weight: bold;
+    background-color: rgba(54, 53, 53, 0.568); /* Cor de fundo ao passar o cursor (pode ajustar a tonalidade) */
+    color: #fff; /* Cor do texto ao passar o cursor */
+}
+/*Fim - Botões: Artigos, Cursos e Downloads. */
+/*==================================================================================================================================*/
+
+/*Cards Promocionais:*/
+.ladoALado {
+    display: inline-block;
+
+}
+
+.custom-card {
+    width: 290px;
+    height: 300px;
+    position: relative;
+    background-color: #000;/* Cor de fundo da imagem escurecida */
+    color: #fff;
+    overflow: hidden; /* Oculta conteúdo que extrapola o cartão */
+    transition: transform 0.3s;/* Adiciona uma transição suave no efeito de zoom */
+    margin: 15px;
+    border-radius: 20px;
+    margin-left: 25px;
+}
+
+.custom-card h5 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18pt;
+    font-weight: bolder;
+}
+
+.custom-card .textoA {
+    font-size: 10pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.custom-card .textoA span.riscado {
+    font-size: 8pt;
+}
+
+.custom-card .textoA del {
+    font-size: 13pt;
+}
+
+.custom-card .textoB {
+    font-size: 13pt;
+    font-family:Impact, 'Arial Narrow Bold', sans-serif
+}
+
+.custom-card .textoB span {
+    font-size: 25pt;
+}
+
+.custom-card:hover {
+    transform: scale(1.09); /* Efeito de zoom no hover */
+}
+
+.card-img {
+    opacity: 0.5; /* Opacidade da imagem */
+    width: 110%;
+    height: 100%;
+    margin-left: -12px;
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.btn-outline-light {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-outline-light a {
+    text-decoration: none;
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    /* Cor de fundo do botão no hover */
+    color: #000;
+    /* Cor do texto do botão no hover */
+}
+
+.btn-outline-light a:hover {
+    background-color: #fff;
+    /* Cor de fundo do botão no hover */
+    color: #000;
+    /* Cor do texto do botão no hover */
+}
+/*Fim - Cards Promocionais.*/
+/*==================================================================================================================================*/
+
+/* Footer: */
+footer {
+    margin-top: 50px;
+}
+/*Fim - Footer: */
+/* ============================================================================================================================== */

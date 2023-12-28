@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+main {
+    margin-top: 120px;
+}
+
+/* Section - primaria: */
+#cards .card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+#cards .card .btn {
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+/*Fim -  Section - primaria. */
+/* =============================================================================================================================== */
+
+/* Section - secundaria: */
+#especialista {
+    margin-top: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#logo .card-img-top {
+    width: 30px;
+}
+
+#c3 .card{
+    border: none;
+}
+
+#c3 .card-body h5 {
+    font-size: 20pt;
+}
+
+#c3 .card-body p {
+    margin-top: 30px;
+}
+
+#c3 .card-body a {
+    width: 300px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+/*Fim -  Section - secundaria: */
+/* =============================================================================================================================== */
+
+/* Footer: */
+footer {
+    margin-top: 50px;
+}
+/*Fim -  Footer: */
+/* =============================================================================================================================== */

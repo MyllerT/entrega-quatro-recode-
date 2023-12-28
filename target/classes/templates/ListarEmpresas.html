@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Destinos</title>
+    <!-- Link para o Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" th:href="@{/clientes}">Clientes</a>
+    <a class="navbar-brand" th:href="@{/destinos}">Destinos</a>
+</nav>
+
+<div class="container mt-3">
+    <h2>Lista de Destinos</h2>
+    <a class="btn btn-primary mb-2" th:href="@{/destinos/novo}">Adicionar Destino</a>
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Cidade</th>
+            <th>País</th>
+            <th>Clientes</th>
+            <th>Ações</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="destino : ${destinos}">
+            <td th:text="${destino.id}"></td>
+            <td th:text="${destino.nome}"></td>
+            <td th:text="${destino.descricao}"></td>
+            <td th:text="${destino.cidade}"></td>
+            <td th:text="${destino.pais}"></td>
+            <td>
+                <ul>
+                    <li th:each="cliente : ${destino.clientes}">
+                        <span th:text="${cliente.nome}"></span>
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <a class="btn btn-info btn-sm" th:href="@{/destinos/editar/{id}(id=${destino.id})}">Editar</a>
+                <a class="btn btn-danger btn-sm" th:href="@{/destinos/deletar/{id}(id=${destino.id})}">Excluir</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+
+</html>

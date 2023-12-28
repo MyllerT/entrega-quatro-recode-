@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+main {
+    margin-top: 150px;
+}
+
+#cadastro {
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 700px;
+    height: 530px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);  /*Efeito de sombra ao redor de todo o container*/   
+}
+
+#cadastro h1 {
+    margin-top: 20px;
+    font-size: 15pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #666666;
+}
+
+#cadastro h6 {
+    margin-top: 30px;
+    font-size: 10pt;
+}
+
+#cadastro #emailCPF {
+    margin-top: 50px;
+    height: 50px;
+}
+
+#cadastro #senhaCadastro {
+    margin-top: 30px;
+    height: 50px;
+}
+
+.form-control::placeholder {
+    font-style: italic;
+    color: #555555;
+}
+
+.btn#btnCadastro {
+    margin-top: 30px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.btn#btnCadastro a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#cadastro #siteProtegido {
+    margin-top: 30px;
+}
+
+#cadastro #naoCadastro{
+    margin-top: 10px;
+    font-size: 10pt;
+}
+
+#cadastro img {
+    margin-top: 80px;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+#emDesenvolv {
+    margin-top: 120px;
+    width: 1200px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+ #mensagem h1 {
+    margin-top: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #555555;
+    font-size: 20pt;
+ }
+
+ #mensagem p#p2,#p3,#p4,#p5 {
+    margin-top: -25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 10pt;
+    color: #555555;
+ }
+
+ #mensagem h2 {
+    margin-top: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 13pt;
+    color: #555555;
+ }
+ #mensagem h3 {
+    /* margin-top: 10px; */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 13pt;
+    color: #555555;
+ }
+
+ #imgError img {
+    margin-top: 50px;
+    height: 355px;
+ }
+
+ footer {
+    margin-top: 30px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}

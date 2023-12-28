@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="img/Webalys-Kameleon.pics-Music-Equalizer.svg" type="image/x-icon" />
+  <title>Equalizer</title>
+  <!-- Google fonts Lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+
+  <!-- CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+  <!-- CSS do projeto -->
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/jornada.css" />
+
+  <!-- JavaScript Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body>
+  <header>
+    <!-- NAVBAR: ================================================================================================================== -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+      <div class="container py-3">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/logo 2.png" alt="iMovi" />
+          <span>Equalizer</span>
+        </a>
+
+        <!--Botão para alternar a visibilidade do menu de navegação em telas pequenas:====================== -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+          aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+        <!--Fim - Botão para alternar a visibilidade do menu de navegação em telas pequenas.================ -->
+
+        <div class="collapse navbar-collapse" id="navbar-items">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="navbar nav-item">
+              <a class="nav-link dropdown-toggle" href="#" id="certificacaoDropdown" role="button"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Certificação</a>
+              <div id="certificacao" class="dropdown-menu" aria-labelledby="certificacaoDropdown">
+                <!-- <a class="dropdown-item" href="#">Iniciar minha jornada</a> -->
+                <a class="dropdown-item" href="../html/empreCertificadas.html">Empresas certificadas</a>
+              </div>
+            </li>
+
+            <li class="navbar nav-item">
+              <a class="nav-link dropdown-toggle" href="#" id="consultoriasDropdown" role="button"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Consultorias</a>
+              <div class="dropdown-menu" aria-labelledby="consultoriasDropdown">
+                <a class="dropdown-item" href="../html/login.html">Minha consultoria</a>
+                <a class="dropdown-item" href="../html/error.html">Agendar consultoria</a>
+              </div>
+            </li>
+
+            <li class="navbar nav-item">
+              <a class="nav-link" href="../html/saibaM.html">Saiba mais</a>
+            </li>
+
+            <li class="navbar nav-item">
+              <a class="nav-link" href="../html/contato.html">Contate-nos</a>
+            </li>
+
+            <li class="navbar nav-item">
+              <a class="nav-link" href="../html/login.html">Login</a>
+            </li>
+          </ul>
+
+          <form class="search">
+            <input type="text" placeholder="Pesquisar" class="searchinput">
+            <button type="button" class="searchbutton btn-outline">
+              <i class="ri-search-2-line"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--Fim - NAVBAR: ============================================================================================================= -->
+  </header>
+
+  <main>
+    <section id="comercial">
+      <div id="chamadaCom" class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h3>Inicie sua Jornada Rumo à Excelência Inclusiva com a Equalizer</h3>
+
+            <p id="com1">Se você está comprometido em transformar não apenas o ambiente de trabalho, mas também os
+              resultados da
+              sua empresa, a Equalizer Consultoria é a parceira ideal para iniciar essa jornada de certificação em
+              Diversidade e Inclusão (D&I). Aqui estão algumas razões convincentes para dar o primeiro passo agora:</p>
+            <div id="com1Selo">
+              <img id="com1SeloImg" src="../img/fot div2.png" alt="Selo Equalizer">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="container">
+              <p id="com2">Transformação Impactante:
+                A Equalizer não oferece apenas uma certificação; oferecemos uma transformação impactante. Ao abraçar a
+                D&I, sua empresa não apenas atende a padrões, mas se destaca como um líder comprometido com a criação de
+                ambientes de trabalho mais justos, inclusivos e inovadores.</p>
+            </div>
+            <div class="container">
+              <p id="com3">Impacto Mensurável:
+                Através de indicadores mensuráveis, acompanhamos o impacto real que a implementação de práticas
+                inclusivas
+                tem em sua organização. Não se trata apenas de números; trata-se de cultivar um ambiente onde cada
+                colaborador se sente valorizado, impulsionando, assim, o crescimento organizacional.</p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="container">
+              <p id="com4">Selo Equalizer de D&I:
+                Nossa certificação, o "Selo Equalizer de D&I", não é apenas um reconhecimento, é um selo de excelência
+                que diferencia sua empresa. Mostre ao mundo que você não está apenas seguindo tendências, mas liderando
+                o caminho para um futuro empresarial mais inclusivo.</p>
+            </div>
+            <div class="container">
+              <p id="com5"><br>&nbsp; Reconhecimento Anual no "Excelência Inclusiva 360°":
+                Ao conquistar o Selo Equalizer, você não apenas entra para a elite das empresas comprometidas com a D&I,
+                mas também ganha a chance de ser reconhecido anualmente em nosso prestigiado evento "Excelência
+                Inclusiva 360°".</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="comBtn" class="col">
+          <a href="#" class="btn btn-primary">Como funciona</a>
+          <a href="#" class="btn btn-primary">Pacotes e valores</a>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="cultura">
+      <div id="blocoSelo1" class="container">
+        <h1>O que é a Certificação Equalizer de D&I?</h1>
+
+        <div id="textosBl1" class="container">
+          <div class="row">
+            <div id="imgTexto" class="col container">
+              <div class="row">
+                <div class="col">
+                  <img id="selo" src="../img/selo.png" alt="Selo Equalizer.">
+                </div>
+                <div class="col-md-8">
+                  <h3>Selo Equalizer de D&I</h3>
+                  <p id="pA">O Selo Equalizer de Diversidade e Inclusão é o distintivo que consagra organizações
+                    comprometidas com a construção de ambientes de trabalho inclusivos e equitativos. Mais do que uma
+                    certificação, é o reconhecimento público do compromisso em promover uma cultura organizacional que
+                    valoriza a diversidade, fomenta a igualdade e cria um espaço seguro para todos os colaboradores.
+                    Ao exibir o Selo Equalizer, as empresas destacam-se como líderes na transformação do local de
+                    trabalho, impulsionando o crescimento por meio de práticas inclusivas e inovadoras.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <p id="pB">É a marca que eleva a sua organização a um novo patamar na promoção de um ambiente profissional mais justo e    acolhedor.<br>
+                Ele não é apenas um selo; é o reconhecimento tangível do seu empenho em transformar o local de trabalho,
+                impulsionar o crescimento e criar um ambiente seguro para todos.<br>
+                Seja reconhecido como um líder em diversidade e inclusão com o Selo Equalizer de D&I
+              </p>
+            </div>
+          </div>
+        </div> <!--BlocoSelo1-->
+
+        <div id="blocoSelo3" class="container">
+          <div>
+            <h5>Promova em sua empresa um ambiente excepcional para trabalhar e se torne o mais novo Case de Sucesso da
+              Equalizer</h5>
+          </div>
+          <div id="btnQuero">
+            <a href="../html/cadastro.html" class="btn btn-primary">Quero certificar minha empresa</a>
+          </div>
+        </div> <!-- BlocoSelo3 -->
+    </section>
+
+    <section id="alavancagem" class="container-fluid">
+      <div id="cardsSucesso">
+        <h1>Cultura organizacional e alavancagem de indicadores</h1>
+        <div id="caseSucesso">
+          <div class="ladoALado">
+            <div id="cardPromo" class="col card text-center custom-card">
+              <img src="../img/1.comTransp.png" class="card-img"
+                alt="Comunicação Transparente.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Comunicação Transparente</h5>
+                  <p class="textoA">Indicador de Positividade: Redução de Mal-Entendidos Internos</p>
+                  <P class="textoB">A metodologia Equalizer promove práticas de comunicação transparente, onde informações são compartilhadas de forma clara e aberta.</P>
+                  <button type="button" class="btn btn-outline-light"><a href="../html/error.html">Saiba mais</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div class=" card text-center custom-card">
+              <img src="../img/2.inovaCol.png" class="card-img"
+                alt="Inovação Colaborativa.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Inovação Colaborativa</h5>
+                  <p class="textoA">Indicador de Positividade: Aumento de Ideias Implementadas.</p>
+                  <P class="textoB">Ao cultivar um ambiente inclusivo que valoriza as contribuições de todos, a Equalizer estimula a inovação colaborativa.</P>
+                  <button type="button" class="btn btn-outline-light"><a href="../html/error.html">Saiba mais</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div class=" card text-center custom-card">
+              <img src="../img/3.desenLider.png" class="card-img"
+                alt="Desenvolvimento de Liderança.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Desenvolvimento de Liderança</h5>
+                  <p class="textoA">Indicador de Positividade: Crescimento da Satisfação dos Líderes</p>
+                  <P class="textoB">A Equalizer investe no desenvolvimento de líderes inclusivos, capacitando-os a liderar equipes diversas de maneira eficaz. </P>
+                  <button type="button" class="btn btn-outline-light"><a href="../html/error.html">Saiba mais</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div id="cardPromo" class="col card text-center custom-card">
+              <img src="../img/4.respDivers.png" class="card-img"
+                alt="Respeito à Diversidade.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Respeito à Diversidade</h5>
+                  <p class="textoA">Indicador de Positividade: Melhoria na Retenção de Talentos.
+                  </p>
+                  <P class="textoB">Ao promover ativamente o respeito à diversidade, a Equalizer contribui para uma cultura onde todos se sentem valorizados.</P>
+                  <button type="button" class="btn btn-outline-light"><a href="../html/error.html">Saiba mais</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div class=" card text-center custom-card">
+              <img src="../img/5.equiVida.png" class="card-img" alt="Equilíbrio Trabalho-Vida.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Equilíbrio Trabalho-Vida</h5>
+                  <p class="textoA">Indicador de Positividade: Redução do Estresse e Burnout.</p>
+                  <P class="textoB">A Equalizer reconhece a importância do equilíbrio entre trabalho e vida pessoal. Implementando práticas que apoiam esse equilíbrio, a metodologia contribui para a redução do estresse e do burnout.</P>
+                  <button type="button" class="btn btn-outline-light"><a href="../html/error.html">Saiba mais</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div class=" card text-center custom-card">
+              <img src="../img/6.recompensa.png" class="card-img"
+                alt=" Reconhecimento e Recompensa.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title"> Reconhecimento e Recompensa</h5>
+                  <p class="textoA">Indicador de Positividade: Elevação do Engajamento dos Funcionários.</p>
+                  <P class="textoB">A metodologia Equalizer incentiva a criação de programas eficazes de reconhecimento e recompensa. Isso resulta em um aumento tangível no engajamento dos funcionários.</P>
+                  <button type="button" class="btn btn-outline-light"><a href="../html/error.html">Saiba mais</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="depoimento">
+      <div class="container">
+        <h5>Depoimentos</h5>
+        <p>A tranformação é real e possíve!</p>
+      </div>
+      <div id="cards" class="d-flex container justify-content-center mb-4">
+        <div class="row ">
+          <div id="c1" class="card col-md-6">
+            <img src="../img/depo1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Aglaide Coutinho</h5>
+              <p class="card-text">"Minha jornada profissional como cadeirante sempre foi marcada por desafios diários, desde a falta de acessibilidade até a luta constante por reconhecimento. Quando a Equalizer entrou em cena, tudo começou a mudar. A consultoria não apenas implementou medidas práticas de acessibilidade, mas também promoveu uma verdadeira revolução cultural."</p>
+            </div>
+          </div>
+
+          <div id="c2" class="card col-md-6">
+            <img src="../img/depo2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mônica dos Anjos Pessoa</h5>
+              <p class="card-text">"Na minha trajetória profissional como mulher de cultura afro, sempre enfrentei obstáculos que muitos não compreendiam. A busca por igualdade era uma jornada árdua, repleta de batalhas diárias por reconhecimento e respeito. A entrada da Equalizer na equação trouxe uma mudança sísmica."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="planos" class="container-fluid border">
+      <div id="cardsPlanos">
+        <div id="planoTitulo">
+          <h5>Conheça nossos planos & Serviços</h5>
+        </div>
+          <div class="planoladoALado">
+            <div id="planoCustom" class="col card text-center custom-card">
+              <img src="../img/a.essencial.png" class="card-img"
+                alt="Pacote essencial.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Pacote Essential</h5>
+                  <p class="textoA">Pacote Essential</p>
+                  <P class="textoB">Diagnóstico D&I</P>
+                  <P class="textoC">Workshops Iniciais</P>
+                  <button type="button" class="btn btn-outline-light"><a href="../html/error.html">CONFERIR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="planoladoALado">
+            <div id="planoCustom" class=" card text-center custom-card">
+              <img src="../img/a.advanced.png" class="card-img" alt="Pacote Advanced.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Pacote Advanced</h5>
+                  <p class="textoA">Mapeamento Detalhado</p>
+                  <P class="textoB">Plano de Desenvolvimento D&I</P>
+                  <P class="textoC">Cursos Especializados</P>
+                  <button type="button" class="btn btn-outline-light"><a href="../html/error.html">CONFERIR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="planoladoALado">
+            <div id="planoCustom" class=" card text-center custom-card">
+              <img src="../img/a.premium.png" class="card-img"
+                alt="Cascata do Caracol na serra gaucha -RS">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Pacote Premium</h5>
+                  <p class="textoA">Mapeamento Contínuo</p>
+                  <P class="textoB">Programas Personalizados</P>
+                  <P class="textoC">Acompanhamento Periódico</P>
+                  <button type="button" class="btn btn-outline-light"><a href="../html/error.html">CONFERIR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="planoladoALado">
+            <div id="planoCustom" class=" card text-center custom-card">
+              <img src="../img/a.customizado.png" class="card-img" alt="Praia de Jericoacoara no Ceará.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Pacote Customizado</h5>
+                  <p class="textoA">Mapeamento Personalizado</p>
+                  <P class="textoB">Serviços Modulares</P>
+                  <P class="textoC">Suporte Técnico Contínuo</P>
+                  <button type="button" class="btn btn-outline-light"><a href="../html/error.html">CONFERIR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="planoladoALado">
+            <div id="planoCustom" class=" card text-center custom-card">
+              <img src="../img/a.palestra.png" class="card-img"
+                alt="Duna e piscinas naturais dos Lençóis Maranhenses-MA.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Palestras Impactantes</h5>
+                  <p class="textoA">Sensibilização e Motivação</p>
+                  <P class="textoB">Histórias de Sucesso</P>
+                  <P class="textoC">Ferramentas Práticas</P>
+                  <button type="button" class="btn btn-outline-light"><a href="../html/error.html">CONFERIR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="planoladoALado">
+            <div id="planoCustom" class=" card text-center custom-card">
+              <img src="../img/a.curso.png" class="card-img"
+                alt="Cristo Redentor no Corcovado em Rio de Janeiro-RJ.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Curso Intensivo</h5>
+                  <p class="textoA">Aprofundamento Teórico</p>
+                  <P class="textoB">Exercícios Práticos</P>
+                  <P class="textoC">Certificação Individual</P>
+                  <button type="button" class="btn btn-outline-light"><a href="../html/error.html">CONFERIR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- </div> destinoNacional -->
+      </div> <!--cardsPromocionais -->
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="container-fluid bg-dark-color" id="footer">
+    <div class="container">
+      <div class="row">
+        <!-- FOOTER TOP -->
+        <div class="col-12" id="footer-top">
+          <div class="row justify-content-between">
+            <div class="col-4">
+              <h2>
+                <b> EQUALIZER </b>
+              </h2>
+            </div>
+            <div class="col-4" id="social-icons">
+              <a href="../html/error.html"><i class="bi bi-facebook"></i></a>
+              <a href="../html/error.html"><i class="bi bi-instagram"></i></a>
+              <a href="../html/error.html"><i class="bi bi-youtube"></i></a>
+              <a href="../html/error.html"><i class="bi bi-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER DETAILS -->
+        <div class="col-12" id="footer-details">
+          <div class="row">
+            <div class="col-12 col-md-4" id="news-container">
+              <h4>Fique por dentro das novidades</h4>
+              <p class="secondary-color">
+                Inscreva-se para saber em primeira mão
+              </p>
+              <form>
+                <div class="mb-3">
+                  <input type="email" class="form-control" placeholder="Digite o seu e-mail" />
+                </div>
+                <button class="btn btn-dark">Inscrever</button>
+              </form>
+            </div>
+            <div class="col-12 col-md-4" id="contact-container">
+              <h4>Formas de contato</h4>
+              <p class="secondary-color">(11)9999-9999</p>
+              <p class="secondary-color">contato@Equalizer.com</p>
+            </div>
+            <div class="col-12 col-md-4" id="links-container">
+              <div class="row">
+                <h4>Você pode estar buscando por:</h4>
+                <div class="col-6">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="../html/empreCertificadas.html" class="secondary-color">Empresas certificadas</a>
+                    </li>
+                    <li>
+                      <a href="../html/error.html" class="secondary-color">Consultorias</a>
+                    </li>
+                    <li>
+                      <a href="../html/saibaM.html" class="secondary-color">saiba mais</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="../html/contato.html" class="secondary-color">Contate-nos</a>
+                    </li>
+                    <li>
+                      <a href="../html/login.html" class="secondary-color">Login</a>
+                    </li>
+                    <li>
+                      <a href="../html/error.html" class="secondary-color">Trabalhe Conosco</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER BOTTOM -->
+        <div class="col-12" id="footer-bottom">
+          <div class="row justify-content-between">
+            <div class="col-12 col-md-3">
+              <p class="secondary-color">EQUALIZER &copy; 2013</p>
+            </div>
+            <div class="col-12 col-md-3">
+              <p class="secondary-color">
+                Realizamos o seu projeto com
+                <i class="bi bi-heart"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

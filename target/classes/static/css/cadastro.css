@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+main {
+    margin-top: 150px;
+}
+
+/* Section: */
+#formAvaliador {
+    /* margin-top: 30px; */
+    padding: 30px;
+    max-width: 800px;
+    /* height: 600px; */
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+ }
+
+ #formAvaliador input#nascimento, #senha, #conSenha {
+    max-width: 200px;
+
+ }
+
+ #formAvaliador #cliente-form, #pagamento-form, #reserva-form, #consulta-form {
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    border: solid 1px rgba(109, 103, 103, 0.452);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+ }
+
+ .tituloForm h1 {
+    font-size: 20pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #666666;
+ }
+
+ .form-group label {
+    font-size: 11pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #666666;
+ }
+
+ .form-group input {
+   border-color: rgba(109, 103, 103, 0.705);
+}
+
+.form-group input#telefone, #consulta-id {
+   width: 200px;
+}
+
+ .form-group ::placeholder {
+    font-size: 10.5pt;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #666666;
+ }
+
+#formAvaliador .btn-primary, .btn-danger {
+   margin-top: 30px;
+   box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+ }
+ /*Fim - Section. */
+ /* ============================================================================================================================== */

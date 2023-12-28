@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="img/Webalys-Kameleon.pics-Music-Equalizer.svg" type="image/x-icon" />
+  <title>Equalizer</title>
+  <!-- Google fonts Lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+
+  <!-- CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+  <!-- CSS do projeto -->
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/saibaM.css" />
+
+  <!-- JavaScript Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body>
+  <header>
+    <!-- NAVBAR: ================================================================================================================== -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+      <div class="container py-3">
+        <a class="navbar-brand" href="index.html">
+          <img src="../img/logo 2.png" alt="iMovi" />
+          <span>Equalizer</span>
+        </a>
+
+        <!--Botão para alternar a visibilidade do menu de navegação em telas pequenas:====================== -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+          aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+        <!--Fim - Botão para alternar a visibilidade do menu de navegação em telas pequenas.================ -->
+
+        <div class="collapse navbar-collapse" id="navbar-items">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="navbar nav-item">
+              <a class="nav-link dropdown-toggle" href="#" id="certificacaoDropdown" role="button"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Certificação</a>
+              <div id="certificacao" class="dropdown-menu" aria-labelledby="certificacaoDropdown">
+                <a class="dropdown-item" href="jornada.html">Iniciar minha jornada</a>
+                <a class="dropdown-item" href="empreCertificadas.html">Empresas certificadas</a>
+              </div>
+            </li>
+
+            <li class="navbar nav-item">
+              <a class="nav-link dropdown-toggle" href="#" id="consultoriasDropdown" role="button"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Consultorias</a>
+              <div class="dropdown-menu" aria-labelledby="consultoriasDropdown">
+                <a class="dropdown-item" href="login.html">Minha consultoria</a>
+                <a class="dropdown-item" href="error.html">Agendar consultoria</a>
+              </div>
+            </li>
+
+            <li class="navbar nav-item">
+              <a class="nav-link" href="contato.html">Contate-nos</a>
+            </li>
+
+            <li class="navbar nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+
+          <form class="search">
+            <input type="text" placeholder="Pesquisar" class="searchinput">
+            <button type="button" class="searchbutton btn-outline">
+              <i class="ri-search-2-line"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--Fim - NAVBAR: ============================================================================================================= -->
+  </header>
+
+  <main class="d-block w-100">
+    <section id="news">
+      <div class="container text-center">
+        <div class="news-content">
+          <p class="news-text">Assine nossa newsletter e mergulhe nas últimas novidades e insights que impulsionarão sua
+            jornada rumo ao sucesso e à inovação. Ao se manter informado conosco, você contribui para promover a
+            diversidade e inclusão, construindo um futuro mais igualitário. Não perca a oportunidade de estar entre os
+            primeiros a transformar informação em poder</p>
+          <a href="#" class="btn btn-disguised">Eu quero me manter informado</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="artCurDown">
+      <div id="btnTroca" class="container">
+        <div class="row d-flex">
+          <div class="col">
+            <div class="text-center my-4">
+              <button class="btn btn-outline" id="btnArtigo">Artigos</button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="text-center my-4">
+              <button class="btn btn-outline" id="btnCurso">Cursos</button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="text-center my-4">
+              <button class="btn btn-outline" id="btnDownload">Downloads</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="artigos">
+      <div id="grupoArtigos">
+        <div id="organize1">
+          <div class="ladoALado">
+            <div id="cardPromo" class="col card text-center custom-card">
+              <img src="../img/artigo.png" class="card-img" alt="Artigo sobre D&I">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">A Importância da Liderança Inclusiva nas Organizações</h5>
+                  <button type="button" class="btn btn-outline-light"><a href="error.html">CONFERIR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div class=" card text-center custom-card">
+              <img src="../img/artigo.png" class="card-img" alt="Artigo sobre D&I">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Estratégias Eficientes para Promover a Diversidade no Ambiente de Trabalho</h5>
+                  <button type="button" class="btn btn-outline-light"><a href="error.html">CONFERIR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div class=" card text-center custom-card">
+              <img src="../img/artigo.png" class="card-img" alt="Artigo sobre D&I">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">O Impacto Positivo da Inclusão na Inovação Empresarial</h5>
+                  <button type="button" class="btn btn-outline-light"><a href="error.html">CONFERIR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div class=" card text-center custom-card">
+              <img src="../img/artigo.png" class="card-img" alt="Artigo sobre D&I">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Desafios Comuns na Implementação de Programas de D&I e Como Superá-los</h5>
+                  <button type="button" class="btn btn-outline-light"><a href="error.html">CONFERIR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div id="cardPromo" class="col card text-center custom-card">
+              <img src="../img/artigo.png" class="card-img" alt="Artigo sobre D&I">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">A Contribuição da Diversidade de Gênero para o Crescimento Sustentável</h5>
+                  <button type="button" class="btn btn-outline-light"><a href="error.html">CONFERIR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div class=" card text-center custom-card">
+              <img src="../img/artigo.png" class="card-img" alt="Artigo sobre D&I">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Diversidade Geracional: Integrando Todas as Gerações no Local de Trabalho</h5>
+                  <button type="button" class="btn btn-outline-light"><a href="error.html">CONFERIR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div class=" card text-center custom-card">
+              <img src="../img/artigo.png" class="card-img" alt="Artigo sobre D&I">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Avaliando o Sucesso: Métricas para Medir Programas de D&I</h5>
+                  <button type="button" class="btn btn-outline-light"><a href="error.html">CONFERIR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div class=" card text-center custom-card">
+              <img src="../img/artigo.png" class="card-img" alt="Artigo sobre D&I">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Inclusão Digital: Promovendo a Diversidade no Mundo Virtual</h5>
+                  <button type="button" class="btn btn-outline-light"><a href="error.html">CONFERIR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!--destinoNacional-->
+      </div> <!--cardsPromocionais -->
+    </section>
+
+    <section id="cursos">
+      <div id="grupoCursos">
+        <div id="organize2">
+          <div class="ladoALado">
+            <div id="cardPromo" class="col card text-center custom-card">
+              <img src="../img/cursos.png" class="card-img" alt="Cursos Equalizer.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Curso Avançado de Liderança Inclusiva</h5>
+                  <button type="button" class="btn btn-outline-light"><a href="error.html">CONFERIR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div class=" card text-center custom-card">
+              <img src="../img/cursos.png" class="card-img" alt="Cursos Equalizer.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Desenvolvimento de Habilidades para Promover a Diversidade no Trabalho</h5>
+                  <button type="button" class="btn btn-outline-light"><a href="error.html">CONFERIR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div class=" card text-center custom-card">
+              <img src="../img/cursos.png" class="card-img" alt="Cursos Equalizer.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Inclusão 360: Capacitação para Gestores de Recursos Humanos</h5>
+                  <button type="button" class="btn btn-outline-light"><a href="error.html">CONFERIR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div class=" card text-center custom-card">
+              <img src="../img/cursos.png" class="card-img" alt="Cursos Equalizer.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Estratégias Práticas para Implementar Programas de D&I com Sucesso</h5>
+                  <button type="button" class="btn btn-outline-light"><a href="error.html">CONFERIR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div id="cardPromo" class="col card text-center custom-card">
+              <img src="../img/cursos.png" class="card-img" alt="Cursos Equalizer.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Diversidade e Inovação: Como Integrar Criatividade no Ambiente Corporativo</h5>
+                  <button type="button" class="btn btn-outline-light"><a href="error.html">CONFERIR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div class=" card text-center custom-card">
+              <img src="../img/cursos.png" class="card-img" alt="Cursos Equalizer.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Construindo um Ambiente Inclusivo: Curso para Colaboradores</h5>
+                  <button type="button" class="btn btn-outline-light"><a href="../html/error.html">CONFERIR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div class=" card text-center custom-card">
+              <img src="../img/cursos.png" class="card-img" alt="Cursos Equalizer.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Treinamento em Comunicação Interpessoal para Fomentar a Diversidade</h5>
+                  <button type="button" class="btn btn-outline-light"><a href="../html/error.html">CONFERIR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div class=" card text-center custom-card">
+              <img src="../img/cursos.png" class="card-img" alt="Cursos Equalizer.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Desenvolvimento Profissional e Diversidade: Uma Jornada de Crescimento</h5>
+                  <button type="button" class="btn btn-outline-light"><a href="../html/error.html">CONFERIR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="downloads">
+      <div id="grupoDownloads">
+        <div id="organize3">
+          <div class="ladoALado">
+            <div id="cardPromo" class="col card text-center custom-card">
+              <img src="../img/download.png" class="card-img" alt="Downloads Equalizer.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Guia Completo para Elaboração de Políticas de D&I</h5>
+                  <button type="button" class="btn btn-outline-light"><a href="../html/error.html">BAIXAR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div class=" card text-center custom-card">
+              <img src="../img/download.png" class="card-img" alt="Downloads Equalizer.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Infográfico: Os Benefícios da Diversidade para Empresas</h5>
+                  <button type="button" class="btn btn-outline-light"><a href="../html/error.html">BAIXAR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div class=" card text-center custom-card">
+              <img src="../img/download.png" class="card-img" alt="Downloads Equalizer.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Checklist para Avaliação da Cultura de Inclusão Organizacional</h5>
+                  <button type="button" class="btn btn-outline-light"><a href="../html/error.html">BAIXAR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div class=" card text-center custom-card">
+              <img src="../img/download.png" class="card-img" alt="Downloads Equalizer.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">E-book: Estratégias para Integrar Funcionários com Deficiência</h5>
+                  <button type="button" class="btn btn-outline-light"><a href="../html/error.html">BAIXAR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div id="cardPromo" class="col card text-center custom-card">
+              <img src="../img/download.png" class="card-img" alt="Downloads Equalizer.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Modelo de Plano de Ação para Programas de Diversidade e Inclusão</h5>
+                  <button type="button" class="btn btn-outline-light"><a href="../html/error.html">BAIXAR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div class=" card text-center custom-card">
+              <img src="../img/download.png" class="card-img" alt="Downloads Equalizer.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Pesquisa de Mercado: Tendências Atuais em D&I</h5>
+                  <button type="button" class="btn btn-outline-light"><a href="../html/error.html">BAIXAR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div class=" card text-center custom-card">
+              <img src="../img/download.png" class="card-img" alt="Downloads Equalizer.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Webinar: Conversas Cruciais sobre Diversidade no Ambiente de Trabalho</h5>
+                  <button type="button" class="btn btn-outline-light"><a href="../html/error.html">BAIXAR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ladoALado">
+            <div class=" card text-center custom-card">
+              <img src="../img/download.png" class="card-img" alt="Downloads Equalizer.">
+              <div class="card-img-overlay">
+                <div class="centered-text">
+                  <h5 class="card-title">Kit de Ferramentas para Sensibilização sobre Viés Inconsciente</h5>
+                  <button type="button" class="btn btn-outline-light"><a href="../html/error.html">BAIXAR</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="container-fluid bg-dark-color" id="footer">
+    <div class="container">
+      <div class="row">
+        <!-- FOOTER TOP -->
+        <div class="col-12" id="footer-top">
+          <div class="row justify-content-between">
+            <div class="col-4">
+              <h2>
+                <b> EQUALIZER </b>
+              </h2>
+            </div>
+            <div class="col-4" id="social-icons">
+              <a href="../html/error.html"><i class="bi bi-facebook"></i></a>
+              <a href="../html/error.html"><i class="bi bi-instagram"></i></a>
+              <a href="../html/error.html"><i class="bi bi-youtube"></i></a>
+              <a href="../html/error.html"><i class="bi bi-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER DETAILS -->
+        <div class="col-12" id="footer-details">
+          <div class="row">
+            <div class="col-12 col-md-4" id="news-container">
+              <h4>Fique por dentro das novidades</h4>
+              <p class="secondary-color">
+                Inscreva-se para saber em primeira mão
+              </p>
+              <form>
+                <div class="mb-3">
+                  <input type="email" class="form-control" placeholder="Digite o seu e-mail" />
+                </div>
+                <button class="btn btn-dark">Inscrever</button>
+              </form>
+            </div>
+            <div class="col-12 col-md-4" id="contact-container">
+              <h4>Formas de contato</h4>
+              <p class="secondary-color">(11)9999-9999</p>
+              <p class="secondary-color">contato@Equalizer.com</p>
+            </div>
+            <div class="col-12 col-md-4" id="links-container">
+              <div class="row">
+                <h4>Você pode estar buscando por:</h4>
+                <div class="col-6">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="../html/empreCertificadas.html" class="secondary-color">Empresas certificadas</a>
+                    </li>
+                    <li>
+                      <a href="../html/error.html" class="secondary-color">Consultorias</a>
+                    </li>
+                    <li>
+                      <a href="../html/jornada.html" class="secondary-color">Certifique-se</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="../html/contato.html" class="secondary-color">Contate-nos</a>
+                    </li>
+                    <li>
+                      <a href="../html/login.html" class="secondary-color">Login</a>
+                    </li>
+                    <li>
+                      <a href="../html/error.html" class="secondary-color">Trabalhe Conosco</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER BOTTOM -->
+        <div class="col-12" id="footer-bottom">
+          <div class="row justify-content-between">
+            <div class="col-12 col-md-3">
+              <p class="secondary-color">EQUALIZER &copy; 2013</p>
+            </div>
+            <div class="col-12 col-md-3">
+              <p class="secondary-color">
+                Realizamos o seu projeto com
+                <i class="bi bi-heart"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/funcoes.js"></script>
+
+</body>
+
+</html>
